@@ -1,0 +1,19 @@
+		<item>
+			<title><![CDATA[L'Avis Des Moutons - Ep ##num## - ##title##]]></title>
+			<itunes:title><![CDATA[Ep ##num## - ##title##]]></itunes:title>
+			<enclosure url="##url##" length="##size##" type="##mimetype##" />
+			<guid isPermaLink="false">##guid##</guid>
+			<pubDate>##date##</pubDate>
+			<itunes:episodeType>full</itunes:episodeType>
+			<description><![CDATA[<p>##body##</p>
+<p>Par ##auteur##</p>
+<p></p>
+<p>Pour participer :<p>
+<p><a href="https://lavis-des-moutons.fr/">https://lavis-des-moutons.fr/</a></p>]]></description>
+			<itunes:duration>##duration##</itunes:duration>
+			<link><![CDATA[##link##]]></link>
+			<itunes:image href="##img##"/>
+			<itunes:explicit>yes</itunes:explicit>
+			<dc:creator>Path</dc:creator>
+			<itunes:author><![CDATA[##auteur##]]></itunes:author>
+		</item>

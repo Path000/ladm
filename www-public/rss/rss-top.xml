@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <title><![CDATA[L'Avis Des Moutons]]></title>
+        <description><![CDATA[Podcast participatif.\n
+\n
+Une idée, une réaction, un coup de coeur ou un coup de gueule. Partagez, de donnez votre avis en toute liberté.\n
+\n
+Toutes les infos sur http://lavis-des-moutons.fr/\n
+<a href="https://podcloud.fr/podcast/lavis-des-moutons?5cd80670a9b49732113e3a97" target="_blank">Retrouvez L'Avis Des Moutons sur podCloud</a>]]></description>
+		<itunes:image href="https://lavis-des-moutons.fr/img/LADM2017.png"/>
+		<language><![CDATA[fr]]></language>
+		<itunes:category text="Society &amp; Culture" />
+		<itunes:explicit>yes</itunes:explicit>
+		<itunes:author><![CDATA[Path / Picaboubx 2014-2018]]></itunes:author>
+		<link><![CDATA[https://lavis-des-moutons.fr]]></link>
+		<itunes:owner>
+            <itunes:name><![CDATA[Path / Picaboubx 2014-2018]]></itunes:name>
+            <itunes:email><![CDATA[path@lavis-des-moutons.fr]]></itunes:email>
+        </itunes:owner>
+		<itunes:title><![CDATA[L'Avis Des Moutons]]></itunes:title>
+		<itunes:type>episodic</itunes:type>
+		<copyright><![CDATA[L'Avis Des Moutons, Picaboubx, Path]]></copyright>
+        <image>
+            <url><![CDATA[https://lavis-des-moutons.fr/img/LADM2017.png]]></url>
+            <title><![CDATA[L'Avis Des Moutons]]></title>
+            <link>https://lavis-des-moutons.fr</link>
+        </image>
+        <lastBuildDate>##date##</lastBuildDate>
+        <atom:link href="https://lavis-des-moutons.fr/rss" rel="self" type="application/rss+xml"/>
+        <webMaster><![CDATA[path@lavis-des-moutons.fr]]></webMaster>
+		<generator>LADM self generated</generator>

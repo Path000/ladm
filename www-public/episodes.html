@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+	<title>L'Avis Des Moutons</title>
+	<link rel="stylesheet" href="css/ladm.css">
+</head>
+
+<body>
+
+
+	<div id="topDivId" class="container">
+		<div class="row">
+
+			<div class="col">
+
+				<div class="jumbotron shadow bg-light mt-3">
+					<h1 class="text-center fontLADM" style="font-size: 400%; color: #011893;">L'Avis Des Moutons</h1>
+
+					<h2 class="text-center mt-3">L'intégrale des épisodes</h2>
+					<p class="lead mt-3"><span id="totalEpisodesId"></span> participations.</p>
+
+					<hr class="my-4">
+
+					<a class="btn btn-outline-primary" href="/" role="button">Revenir</a>
+
+					<div id="adminButtonsContainerId"></div>
+				</div>
+
+				<div id="soumissionsListContainerId"></div>
+
+				<div id="episodesContainerId"></div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="fixed-bottom">
+		<div class="float-right">
+			<div id="goToTopButton" class="btn btn-warning m-3 ">^TOP^</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modifierFormEpisodeModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modifier</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="formEpisodeId" episode="">
+
+						<div class="form-group">
+							<label for="auteurParticipation">Auteur :</label>
+							<input type="text" id="auteurParticipation" class="form-control border border-danger">
+						</div>
+
+						<div class="form-group">
+							<label for="titreParticipation">Titre :</label>
+							<input type="text" id="titreParticipation" class="form-control border border-danger">
+						</div>
+
+						<div class="form-group">
+							<label for="descriptionParticipation">Description :</label>
+							<textarea id="descriptionParticipation" class="form-control border border-success" rows="3"></textarea>
+						</div>
+
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" id="postParticipationButton" class="btn btn-outline-primary">Envoyer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="publierFormSoumissionModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Créer épisode</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="formSoumissionId" soumissionId="">
+
+						<div class="form-group">
+							<label for="episodeSoumission">Episode :</label>
+							<input type="text" id="episodeSoumission" class="form-control border border-danger">
+						</div>
+
+						<div class="form-group">
+							<label for="auteurSoumission">Auteur :</label>
+							<input type="text" id="auteurSoumission" class="form-control border border-danger">
+						</div>
+
+						<div class="form-group">
+							<label for="titreSoumission">Titre :</label>
+							<input type="text" id="titreSoumission" class="form-control border border-danger">
+						</div>
+
+						<div class="form-group">
+							<label for="descriptionSoumission">Description :</label>
+							<textarea id="descriptionSoumission" class="form-control border border-success" rows="3"></textarea>
+						</div>
+
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-outline-primary" id="postSoumissionButton">Envoyer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-4.3.1.min.js"></script>
+	<script type="text/javascript" src="js/episodes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'LADMFont';
+  src: url('foo.ttf') format('truetype');
+}
+
+body {
+	background-color: #011893;
+}
+
+.fontLADM {
+	font-family: 'LADMFont', Fallback, sans-serif;
+}
+
+#dropArea {
+	border: 3px dashed #ccc;
+	border-radius: 20px;
+	width: 100%;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #EEEEEE;
+}
+
+#dropArea.highlight {
+	border-color: #011893;
+}
+
+#fileElem {
+	display: none;
+}
+
+.podcast-ouvert {
+	font-family: Montserrat, sans-serif;
+	font-style: italic;
+	padding: 2px 5px 2px 2px;
+	text-transform: uppercase;
+	font-size: 200;
+	font-weight: bold;
+	color: #ffffff;
+	background: #ff458c;
+}

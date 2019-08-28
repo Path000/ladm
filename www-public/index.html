@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>L'Avis Des Moutons</title>
+
+	<meta name="author" content="Path">
+	<meta name="description" content="L'Avis Des Moutons, c'est votre podcast. Prenez la parole, partagez ce que vous aimez et donnez votre avis.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+	<link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+	<link rel="stylesheet" href="css/ladm.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col">
+
+				<div class="mt-3">
+					<h1 class="text-center fontLADM" style="font-size: 400%; color: #FFFFFF;">L'Avis Des Moutons</h1>
+					<h2 class="text-center mt-3" style="color: #FFFFFF;">Podcast participatif - Votre "libre antenne"</h2>
+				</div>
+
+				<div id="topDivId" class="">
+				</div>
+
+				<div class="jumbotron shadow bg-light mt-3">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<img class="card-img img-fluid" src="img/LADM2017.png" />
+						</div>
+						<div class="col-md-8">
+							<div id="lastEpisodeId" class="card-body">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="jumbotron shadow bg-light mt-3">
+					<div class="row">
+
+						<div class="col-md-6">
+
+							<h2>À écouter sur place</h2>
+							<a class="btn btn-outline-primary mt-3" href="episodes.html" role="button">Tous les épisodes</a>
+						</div>
+
+						<div class="col-md-6">
+							<div>
+								<h2>Ou à emporter</h2>
+							</div>
+							<div class="media">
+								<a href="/rss" target="LADMRSS"><span class="text-monospace">
+										<img src="img/rss.png" class="align-self-center mr-3" />
+								</a>
+								<p>
+									<a href="/rss" target="LADMRSS"><span class="text-monospace lead">https://lavis-des-moutons.fr/rss</span></a>
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="alert alert-primary mt-3" role="alert">Copiez le <a href="/rss" target="LADMRSS">lien RSS</a> dans votre appli de podcasts préférée.</div>
+				</div>
+
+				<div class="jumbotron shadow bg-light">
+					<div class="row">
+
+						<div class="col-md-6">
+							<h2>Participez par mail</h2>
+							<p>Envoyez un audio de <b>1 à 10 minutes</b><br />avec votre <b>pseudo</b> et un <b>titre</b> par mail à</p>
+							<p class="lead">
+								<a href="mailto:aurelie@lavis-des-moutons.fr">
+									<h3>aurelie@lavis-des-moutons.fr</h3>
+								</a>
+							</p>
+						</div>
+
+						<div class="col-md-6">
+							<h2>Ou déposez votre fichier audio ici</h2>
+
+							<div id="dropArea" class="clearfix">
+								<input type="file" id="fileElem">
+								<label class="btn btn-outline-primary btn-sm float-right" for="fileElem">Choisir un fichier</label>
+								<div class="float-left" id="droppedFilename"></div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="alert alert-primary mt-3" role="alert">Utilisez l’appli <b>dictaphone</b> de votre téléphone intelligent.</div>
+				</div>
+
+				<div class="jumbotron shadow bg-light">
+					<nav>
+						<div class="nav nav-tabs" id="nav-tab" role="tablist">
+							<a class="nav-item nav-link active" id="nav-APropos-tab" data-toggle="tab" href="#nav-APropos" role="tab" aria-controls="nav-APropos" aria-selected="true">À propos</a>
+							<a class="nav-item nav-link" id="nav-historique-tab" data-toggle="tab" href="#nav-historique" role="tab" aria-controls="nav-historique" aria-selected="false">Historique</a>
+							<a class="nav-item nav-link" id="nav-stats-tab" data-toggle="tab" href="#nav-stats" role="tab" aria-controls="nav-stats" aria-selected="false">Stats</a>
+							<a class="nav-item nav-link" id="nav-dispo-tab" data-toggle="tab" href="#nav-dispo" role="tab" aria-controls="nav-dispo" aria-selected="false">Disponible aussi sur</a>
+							<a class="nav-item nav-link" id="nav-nousSoutenons-tab" data-toggle="tab" href="#nav-nousSoutenons" role="tab" aria-controls="nav-nousSoutenons" aria-selected="false">Nous soutenons</a>
+							<a class="nav-item nav-link" id="nav-licence-tab" data-toggle="tab" href="#nav-licence" role="tab" aria-controls="nav-licence" aria-selected="false">Licence</a>
+							<a class="nav-item nav-link" id="nav-mentionsLegales-tab" data-toggle="tab" href="#nav-mentionsLegales" role="tab" aria-controls="nav-mentionsLegales" aria-selected="false">Mentions légales</a>
+							<a class="nav-item nav-link" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="false">Login</a>
+						</div>
+					</nav>
+					<div class="tab-content mt-3" id="nav-tabContent">
+
+						<div class="tab-pane fade show active" id="nav-APropos" role="tabpanel" aria-labelledby="nav-APropos-tab">
+
+
+							<div class="media">
+								<img class="align-self-center mr-3 rounded" style="width: 125px; height: auto;" src="/img/LADM2017.png" />
+								<div class="media-body">
+									<h2>L'Avis Des Moutons</h2>
+									<p class="lead">C'est votre podcast.</p>
+									<p>Prenez la parole, partagez ce que vous aimez et donnez votre avis.</p>
+									<p>Notre unique motivation est la liberté d'expession.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="tab-pane fade" id="nav-historique" role="tabpanel" aria-labelledby="nav-auxManettes-tab">
+
+							<div class="media">
+								<img class="align-self-center mr-3 rounded" style="width: 125px; height: auto;" src="/img/LADMJAQUETTE2014.png" />
+								<div class="media-body">
+									<p>Podcast créé par Picaboubx (<a href="https://twitter.com/picaboubx" target="TWITTERLADM">@picaboubx</a>) en 2014,</p>
+									<p>les opérations sont reprises par Path (<a href="https://twitter.com/Path_MBH" target="TWITTERLADM">@Path_MBH‏</a>) en 2018.</p>
+									<p>Il est co-opéré par Aurélie (<a href="https://twitter.com/Aurelie_LADM" target="TWITTERLADM">@Aurelie_LADM</a>). La seule voix-off qui n’en fait qu’à sa tête.</p>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="tab-pane fade" id="nav-stats" role="tabpanel" aria-labelledby="nav-stats-tab">
+
+							<p>Mesure indépendante et centralisée des téléchargements des épisodes depuis le 22/08/2019.</p>
+							<div id="counterContainerId"></div>
+
+						</div>
+
+						<div class="tab-pane fade" id="nav-dispo" role="tabpanel" aria-labelledby="nav-dispo-tab">
+
+
+							<div class="media">
+								<img class="align-self-center mr-3 rounded" style="width: 125px; height: auto;" src="/img/podcloud.png" />
+								<div class="media-body">
+									<p>
+										Le podcast est disponible sur <a href="https://podcloud.fr/podcast/lavis-des-moutons" target="_blank">podCloud</a> et toutes les plateformes de podcasts.<br />
+										Je veux dire toutes les plateformes qui vous permettent de coller le lien RSS.
+									</p>
+									<p>https://lavis-des-moutons.fr/rss</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="tab-pane fade" id="nav-nousSoutenons" role="tabpanel" aria-labelledby="nav-nousSoutenons-tab">
+							<p>
+								Les Podcasts rencontrent un succès croissant grâce à leur richesse,
+								leur diversité, leur liberté de ton et de format.
+								Les Podcasts le doivent à leur indépendance et leur ouverture.
+							</p>
+							<p>
+								<a href="https://www.podcastouvert.fr" target="_blank" rel="noopener noreferrer">
+									<span class="podcast-ouvert">PODCAST
+										OUVERT</span>
+								</a>
+							</p>
+
+							<hr class="my-4">
+
+
+							<div class="media">
+								<a href="https://alliesnumeriques.org/" target="_blank">
+									<img class="align-self-center mr-3" style="width: 125px; height: auto;" src="/img/Logo-AN.png" />
+								</a>
+								<div class="media-body">
+									<p class="my-0">Les podcasts indépendants vont plus loin avec une communauté d'entreaide.</p>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="tab-pane fade" id="nav-licence" role="tabpanel" aria-labelledby="nav-licence-tab">
+
+							<div class="media">
+								<img class="align-self-center mr-3" style="width: 125px; height: auto;" src="/img/licence.png" />
+								<div class="media-body">
+									<p>L’Avis des moutons est mis à disposition selon les termes de la licence</p>
+									<p>
+										<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
+											Creative Commons Attribution –
+											Pas d’Utilisation Commerciale –
+											Pas de Modification
+											4.0 International.
+										</a>
+									</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="tab-pane fade" id="nav-mentionsLegales" role="tabpanel" aria-labelledby="nav-mentionsLegales-tab">
+
+							<div class="media">
+								<img class="align-self-center mr-3" style="width: 125px; height: auto;" src="/img/lovefooter.png" />
+
+								<div class="media-body">
+									<p>Le logo L'Avis Des Moutons par Phil_Goud (<a href="https://twitter.com/Phil_Goud" target="TWITTERLADM">@Phil_Goud</a>) et Picaboubx.</p>
+									<p>Ce site est hébergé chez <a href="https://www.online.net/" target="_blank">online.net</a></p>
+									<div class="alert alert-warning" role="alert">Fuyez !! Ce site utilise un <strong>cookie</strong> ! Si vous restez, c'est que vous êtes d'accord. D'accord ?</div>
+									<p>Contacter le responsable du site <a href="mailto:path@lavis-des-moutons.fr" target="_blank">path@lavis-des-moutons.fr</a></p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+						</div>
+
+					</div>
+
+					<hr class="my-4">
+
+					<p style="text-align:center;">Picaboubx 2014-2018 / Path 2018-2019</p>
+
+					<div class="alert alert-warning mt-3" role="alert">Le site est en test. Signalez les problèmes et vos suggetions à Aurélie.</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="formParticipationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Votre participation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="pseudoParticipation">Pseudo :</label>
+							<input type="text" id="pseudoParticipation" class="form-control border border-danger" placeholder="Votre pseudo">
+						</div>
+
+						<div class="form-group">
+							<label for="titreParticipation">Titre :</label>
+							<input type="text" id="titreParticipation" class="form-control border border-danger" placeholder="Le titre de votre participation">
+						</div>
+
+
+						<button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseForm" aria-expanded="false" aria-controls="collapseForm">
+							+ d'options
+						</button>
+
+						<div class="collapse" id="collapseForm">
+							<div class="form-group">
+								<label for="descriptionParticipation">Description :</label>
+								<textarea class="form-control border border-success" id="descriptionParticipation" rows="3"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="constactParticipation">Un mail ou un twitter pour échanger à propos de votre participation :</label>
+								<input type="text" id="contactParticipation" class="form-control border border-success" aria-describedby="contactlHelp" placeholder="Un contact">
+								<small id="contactlHelp" class="form-text text-muted">Cette info n'est pas publiée.</small>
+							</div>
+						</div>
+
+
+					</form>
+
+					<div id="alertSubmitParticipation" class="alert alert-primary mt-3" role="alert">
+						Les trolls, les insultes, les propos illégaux, répugnants, racistes, juste méchants sont ignorés.
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-outline-primary" id="postParticipationButton">Envoyer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-4.3.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
