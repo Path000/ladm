@@ -239,10 +239,13 @@ $(document).ready(function() {
 
 
 		// ----------------------------------------------------------------------------------------------------------
-		// INFINITE SCROLL
+		// SCROLL
 		// ----------------------------------------------------------------------------------------------------------
 
 
+		$("#loadMoreButton").click(function() {
+			loadPage(currentPage);
+		});
 
 		function loadPage(page) {
 			$.ajax({
@@ -255,11 +258,14 @@ $(document).ready(function() {
 					}
 					currentPage++;
 				} else {
-					moreToLoad = false;
+					//moreToLoad = false;
+					$("#loadMoreButton").prop('disabled', true);
 				}
+
+
 			});
 		}
-
+		/*
 		var deviceAgent = navigator.userAgent.toLowerCase();
 		var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
 		$(window).on('scroll', function() {
@@ -269,13 +275,13 @@ $(document).ready(function() {
 				if (moreToLoad) loadPage(currentPage);
 			}
 		});
-
+		*/
 		var currentPage = 1;
-		var moreToLoad = true;
+		//var moreToLoad = true;
 
 		function reloadEpisodes() {
 			currentPage = 1;
-			moreToLoad = true;
+			//moreToLoad = true;
 
 			$("#episodesContainerId").empty();
 
